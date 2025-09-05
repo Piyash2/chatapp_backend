@@ -115,7 +115,10 @@ if ENVIRONMENT == 'production':
             'USER': 'postgres',
             'PASSWORD': os.getenv('PG_PASSWORD'),
             'HOST': os.getenv('PG_HOST'),  
-            'PORT': os.getenv('PG_PORT'),    
+            'PORT': os.getenv('PG_PORT'),
+            'OPTIONS': {
+                'connect_timeout': 10,
+            },
         }
     }
 else:
