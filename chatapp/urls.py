@@ -1,6 +1,6 @@
-from django.urls import path
+from django.urls import path  # pyright: ignore[reportMissingImports]
 from .views import *
-from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView  # pyright: ignore[reportMissingImports]
 
 urlpatterns = [
     path('auth/register/', CreateUserView.as_view(), name='register'),

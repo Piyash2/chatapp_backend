@@ -99,7 +99,11 @@ SIMPLE_JWT = {
 # Cors Headers
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://web-production-f03d9.up.railway.app",
 ]
+
+# Allow all origins for development (you can restrict this in production)
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
